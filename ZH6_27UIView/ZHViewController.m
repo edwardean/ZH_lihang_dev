@@ -8,6 +8,7 @@
 
 #import "ZHViewController.h"
 #import "ZHCustomUILabel.h"
+#import "ZHCustomImageView.h"
 @interface ZHViewController ()
 
 @end
@@ -36,12 +37,22 @@
     
     [self performSelector:@selector(viewHierachyTest) withObject:nil afterDelay:2.0f];
     
+    
+    // Custom UILabel
     ZHCustomUILabel *zhCustomLabel = [[ZHCustomUILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 30)];
     zhCustomLabel.center = self.view.center;
     zhCustomLabel.text = @"zhCustomLabel";
     [zhCustomLabel setTextColor:[UIColor greenColor]];
     [zhCustomLabel sizeToFit];
     [self.view addSubview:zhCustomLabel];
+    
+    // Custm UIImageView
+    ZHCustomImageView *zhCustomImageView = [[ZHCustomImageView alloc] initWithFrame:CGRectMake(150, 240, 100, 100)];
+    [zhCustomImageView setImage:[UIImage imageNamed:@"image"]];
+    [self.view addSubview:zhCustomImageView];
+    [zhCustomImageView setNeedsDisplay];
+    
+
 }
 
 - (void)viewDidAppear:(BOOL)animated {

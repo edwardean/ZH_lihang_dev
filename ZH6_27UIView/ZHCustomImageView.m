@@ -7,7 +7,7 @@
 //
 
 #import "ZHCustomImageView.h"
-
+#import <QuartzCore/QuartzCore.h>
 @implementation ZHCustomImageView
 
 - (id)initWithFrame:(CGRect)frame
@@ -24,7 +24,8 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
-    
+    self.layer.cornerRadius = 4.0f;
+    self.layer.masksToBounds = YES;
 }
 
 

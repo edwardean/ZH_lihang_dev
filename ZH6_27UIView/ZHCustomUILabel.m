@@ -22,9 +22,9 @@
     NSLog(@"%s",__func__);
     super.text = text;
 }
-//- (void)text:(NSString *)text {
-//    super.text = text;
-//}
+- (void)text:(NSString *)text {
+    super.text = text;
+}
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
