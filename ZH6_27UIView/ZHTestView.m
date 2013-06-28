@@ -27,7 +27,7 @@
     // Drawing code
 }
 - (void)layoutSubviews {
-    
+    [super layoutSubviews];
 }
 
 @end

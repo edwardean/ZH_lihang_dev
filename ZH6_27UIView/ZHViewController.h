@@ -11,4 +11,5 @@
 @interface ZHViewController : UIViewController
 
 @property (nonatomic, retain) UIView *myTestView;
+- (IBAction)sliderValueChange:(id)sender;
 @end
