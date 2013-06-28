@@ -47,8 +47,39 @@
     [self.view addSubview:zhCustomLabel];
     
     // Custm UIImageView
-    ZHCustomImageView *zhCustomImageView = [[ZHCustomImageView alloc] initWithFrame:CGRectMake(150, 240, 100, 100)];
+    ZHCustomImageView *zhCustomImageView = [[ZHCustomImageView alloc] initWithFrame:CGRectMake(150, 240, 150, 120)];
+    [zhCustomImageView setBackgroundColor:[UIColor yellowColor]];
     [zhCustomImageView setImage:[UIImage imageNamed:@"image"]];
+    
+    //内容模式左下角
+    //[zhCustomImageView setContentMode:UIViewContentModeBottomLeft];
+    
+    //内容模式底部
+    //[zhCustomImageView setContentMode:UIViewContentModeBottom];
+    
+    //内容模式右下角
+    //[zhCustomImageView setContentMode:UIViewContentModeBottomRight];
+    
+    //内容模式中心
+    //[zhCustomImageView setContentMode:UIViewContentModeCenter];
+    
+    //内容模式左边
+    //[zhCustomImageView setContentMode:UIViewContentModeLeft];
+    
+    //内容模式重画
+    //[zhCustomImageView setContentMode:UIViewContentModeRedraw];
+    
+    //内容模式居右
+    //[zhCustomImageView setContentMode:UIViewContentModeRight];
+    
+    //内容模式缩放填充
+    //[zhCustomImageView setContentMode:UIViewContentModeScaleAspectFill];
+    
+    //内容模式缩放适应，保持横纵比例
+    //[zhCustomImageView setContentMode:UIViewContentModeScaleAspectFit];
+    
+    
+    [zhCustomImageView setContentMode:UIViewContentModeScaleToFill];
     [self.view addSubview:zhCustomImageView];
     [zhCustomImageView setNeedsDisplay];
     

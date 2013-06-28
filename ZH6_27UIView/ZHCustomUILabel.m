@@ -33,7 +33,6 @@
     self.layer.cornerRadius = 4.0f;
     self.layer.borderWidth = 2;
     self.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    //[self sizeToFit];
 }
 
 - (void)drawTextInRect:(CGRect)rect {
