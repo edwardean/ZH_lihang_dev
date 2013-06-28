@@ -24,6 +24,7 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
+    [super drawRect:rect];
     self.layer.cornerRadius = 4.0f;
     self.layer.masksToBounds = YES;
 }

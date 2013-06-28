@@ -18,20 +18,22 @@
     }
     return self;
 }
-- (void)setText:(NSString *)text {
-    NSLog(@"%s",__func__);
-    super.text = text;
-}
-- (void)text:(NSString *)text {
-    super.text = text;
-}
+//- (void)setText:(NSString *)text {
+//    NSLog(@"%s",__func__);
+//    super.text = text;
+//}
+//- (void)text:(NSString *)text {
+//    super.text = text;
+//}
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
+    [super drawRect:rect];
     self.layer.cornerRadius = 4.0f;
     self.layer.borderWidth = 2;
     self.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    //[self sizeToFit];
 }
 
 - (void)drawTextInRect:(CGRect)rect {
