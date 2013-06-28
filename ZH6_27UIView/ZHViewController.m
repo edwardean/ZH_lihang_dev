@@ -7,7 +7,7 @@
 //
 
 #import "ZHViewController.h"
-
+#import "ZHCustomUILabel.h"
 @interface ZHViewController ()
 
 @end
@@ -35,6 +35,13 @@
     NSLog(@"%@",NSStringFromCGSize(thatFitsSize));
     
     [self performSelector:@selector(viewHierachyTest) withObject:nil afterDelay:2.0f];
+    
+    ZHCustomUILabel *zhCustomLabel = [[ZHCustomUILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 30)];
+    zhCustomLabel.center = self.view.center;
+    zhCustomLabel.text = @"zhCustomLabel";
+    [zhCustomLabel setTextColor:[UIColor greenColor]];
+    [zhCustomLabel sizeToFit];
+    [self.view addSubview:zhCustomLabel];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -70,6 +77,21 @@
     //Now bring the whiteview to back
     [self.view sendSubviewToBack:whiteView];
     NSLog(@"Now the new sort is:%@",self.view.subviews);
+    
+    // Now remove the last view from superview
+    [redView removeFromSuperview];
+    NSLog(@"After remove the redview,let's check it:%@",self.view.subviews);
+    
+    UIView *newRedView = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 200, 100)];
+    [newRedView setBackgroundColor:[UIColor redColor]];
+    
+    // Thoses three method test the insertSubView: 
+    [self.view insertSubview:newRedView aboveSubview:whiteView];
+    
+    [self.view insertSubview:newRedView atIndex:0];
+    
+    [self.view insertSubview:newRedView belowSubview:whiteView];
+    
 }
 - (void)didReceiveMemoryWarning
 {

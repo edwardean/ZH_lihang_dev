@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CA7A5A70177D193600342801 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7A5A6F177D193600342801 /* QuartzCore.framework */; };
 		CA7A5A73177D1E7200342801 /* ZHTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7A5A72177D1E7200342801 /* ZHTestView.m */; };
+		CA7A5A76177D2F8100342801 /* ZHCustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7A5A75177D2F8100342801 /* ZHCustomImageView.m */; };
+		CA7A5A79177D2F9D00342801 /* ZHCustomUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7A5A78177D2F9D00342801 /* ZHCustomUILabel.m */; };
 		CAD30BE3177C4BFD00B4A13F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD30BE2177C4BFD00B4A13F /* UIKit.framework */; };
 		CAD30BE5177C4BFD00B4A13F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD30BE4177C4BFD00B4A13F /* Foundation.framework */; };
 		CAD30BE7177C4BFD00B4A13F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD30BE6177C4BFD00B4A13F /* CoreGraphics.framework */; };
@@ -27,6 +29,10 @@
 		CA7A5A6F177D193600342801 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CA7A5A71177D1E7200342801 /* ZHTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHTestView.h; sourceTree = "<group>"; };
 		CA7A5A72177D1E7200342801 /* ZHTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHTestView.m; sourceTree = "<group>"; };
+		CA7A5A74177D2F8100342801 /* ZHCustomImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHCustomImageView.h; sourceTree = "<group>"; };
+		CA7A5A75177D2F8100342801 /* ZHCustomImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHCustomImageView.m; sourceTree = "<group>"; };
+		CA7A5A77177D2F9D00342801 /* ZHCustomUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHCustomUILabel.h; sourceTree = "<group>"; };
+		CA7A5A78177D2F9D00342801 /* ZHCustomUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHCustomUILabel.m; sourceTree = "<group>"; };
 		CAD30BDF177C4BFD00B4A13F /* ZH6_27UIView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZH6_27UIView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD30BE2177C4BFD00B4A13F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CAD30BE4177C4BFD00B4A13F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +106,10 @@
 				CA7A5A71177D1E7200342801 /* ZHTestView.h */,
 				CA7A5A72177D1E7200342801 /* ZHTestView.m */,
 				CAD30BFD177C4BFD00B4A13F /* ZHViewController.xib */,
+				CA7A5A74177D2F8100342801 /* ZHCustomImageView.h */,
+				CA7A5A75177D2F8100342801 /* ZHCustomImageView.m */,
+				CA7A5A77177D2F9D00342801 /* ZHCustomUILabel.h */,
+				CA7A5A78177D2F9D00342801 /* ZHCustomUILabel.m */,
 				CAD30BE9177C4BFD00B4A13F /* Supporting Files */,
 			);
 			path = ZH6_27UIView;
@@ -191,6 +201,8 @@
 				CAD30BF3177C4BFD00B4A13F /* ZHAppDelegate.m in Sources */,
 				CAD30BFC177C4BFD00B4A13F /* ZHViewController.m in Sources */,
 				CA7A5A73177D1E7200342801 /* ZHTestView.m in Sources */,
+				CA7A5A76177D2F8100342801 /* ZHCustomImageView.m in Sources */,
+				CA7A5A79177D2F9D00342801 /* ZHCustomUILabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
