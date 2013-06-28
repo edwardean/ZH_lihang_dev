@@ -18,15 +18,9 @@
     }
     return self;
 }
-//- (void)setText:(NSString *)text {
-//    NSLog(@"%s",__func__);
-//    super.text = text;
-//}
-//- (void)text:(NSString *)text {
-//    super.text = text;
-//}
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
+
+
+// If you subclass UIView directly, your implementation of this method does not need to call super. However, if you are subclassing a different view class, you should call super at some point in your implementation.
 - (void)drawRect:(CGRect)rect
 {
     [super drawRect:rect];
@@ -38,5 +32,9 @@
 - (void)drawTextInRect:(CGRect)rect {
     UIEdgeInsets insets = UIEdgeInsetsMake(0, 1, 0, 0);
     [super drawTextInRect:UIEdgeInsetsInsetRect(rect, insets)];
+}
+
+- (void)drawRect:(CGRect)rect forViewPrintFormatter:(UIViewPrintFormatter *)formatter {
+    [super drawRect:rect forViewPrintFormatter:formatter];
 }
 @end

@@ -1,5 +1,7 @@
 李航iOS学习进度&仓库说明
 ===
+* master分支为UIView相关内容CustomFrame分支下为28号自定义frame相关属性内容
+* 
 Date 2013/6/28
 ---
 

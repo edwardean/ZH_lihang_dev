@@ -10,5 +10,4 @@
 
 @interface ZHCustomUILabel : UILabel
 
-//- (void)text:(NSString *)text;
 @end
